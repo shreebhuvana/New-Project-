@@ -25,11 +25,16 @@ public static void main(String[] args) {
 	s3.setId(789);
 	s3.setName("Sam");
 	s3.setPhno(1234567890l);
+	Employee s4 = new Employee();
+	s3.setId(546);
+	s3.setName("mmm");
+	s3.setPhno(87778985883l);
 	
 	e.put(10,s);
 	e.put(20,s1);
 	e.put(30, s2);
 	e.put(40, s3);
+	e.put(50, s4);
 	Set<Entry<Integer,Employee>> x = e.entrySet();
 	for (Entry<Integer, Employee> v : x) {
 		System.out.println(v.getKey());
